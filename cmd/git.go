@@ -25,7 +25,7 @@ func init() {
 }
 
 var versionCmd = &cobra.Command{
-	Use:   "git",
+	Use:   "clone",
 	Short: "Command to run git operations over the organization's repositories.",
 	Run: func(cmd *cobra.Command, args []string) {
 
