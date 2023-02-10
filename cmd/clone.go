@@ -30,6 +30,8 @@ var versionCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 
 		for _, repo := range repositories {
+			// Print cloning repo with green color
+			fmt.Printf("\033[32mCLONE \033[0m %s", repo)
 			exec.
 				Command("git", "clone", fmt.Sprintf("https://github.com/gume1a/%s.git", repo)).
 				Run()
