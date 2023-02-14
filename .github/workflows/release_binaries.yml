@@ -31,3 +31,8 @@ jobs:
           goversion: 1.19
           binary_name: "feltna"
           extra_files: README.md  # Additional files to include with the binaries.
+
+      - uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
