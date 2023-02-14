@@ -32,4 +32,4 @@ jobs:
           goarch: ${{ matrix.goarch }}
           goversion: 1.19
           binary_name: "feltna"
-          extra_files: LICENSE  # Additional files to include with the binaries.
+          extra_files: README.md  # Additional files to include with the binaries.
