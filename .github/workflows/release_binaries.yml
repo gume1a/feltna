@@ -4,6 +4,8 @@ name: cli release
 
 on:
   push:
+    branches:
+      - master
   release:
     types: [ published ]
 
