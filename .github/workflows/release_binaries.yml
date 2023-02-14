@@ -3,6 +3,7 @@
 name: cli release
 
 on:
+  push:
   release:
     types: [ published ]
 
@@ -21,6 +22,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
-          goversion: 1.18
+          goversion: 1.19
           binary_name: "feltna"
           extra_files: LICENSE  # Additional files to include with the binaries.
