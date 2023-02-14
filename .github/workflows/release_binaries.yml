@@ -4,6 +4,7 @@ name: cli release
 
 on:
   release:
+    branch: master
     types: [ published ]
 
 jobs:
