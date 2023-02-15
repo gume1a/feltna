@@ -1,17 +1,15 @@
-#### Utility Tool For Gume1a
-##### Installation
+# Utility Tool For Gume1a
+#### Installation
 
-A valid installation of Go is required. Running the following command will result in allowance of running the commands from the integrated terminal.
+A valid [installation of Go](https://go.dev/doc/install) is required. Running the following command will result in allowance of running the commands from the integrated terminal.
 
 ```
-go install github.com\gume1a\feltna@latest
+go install github.com/gume1a/feltna@latest
 ```
 
 This installs the latest version of the `feltna` cmd tool from the master branch.
 
-######
-
-##### Usage
+#### Usage
 Current usage is as displayed here. All of the stated command might have some optional flags that can be shown with running `feltna <command> --help` or shorthand `-h`.
 
 ```
@@ -32,7 +30,7 @@ Flags:
 Use "feltna [command] --help" for more information about a command.
 ```
 
-##### Developement
+#### Developement
 For development please refer to [cobra](https://github.com/spf13/cobra) package. It's used for command line tools.
 
 
