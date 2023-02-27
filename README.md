@@ -4,6 +4,7 @@
 A valid [installation of Go](https://go.dev/doc/install) is required. Running the following command will result in allowance of running the commands from the integrated terminal.
 
 ```
+export GOPRIVATE=github.com/gume1a/oauthproxy
 go install github.com/gume1a/feltna@latest
 ```
 
