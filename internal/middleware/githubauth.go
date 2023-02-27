@@ -41,8 +41,8 @@ func GithubAuthentication(scopes []string, next func(token *oauth2.Token, client
 	log.Printf("Successfully authenticated")
 
 	// Create a new GitHub client using the access token http.Client.
-	client := githubapi.NewClient(oauthClient.GetClient(context.Background(), token))
 	token := tokenResponse.Token
+	client := githubapi.NewClient(oauthClient.GetClient(context.Background(), token))
 
 	next(token, client)
 }
