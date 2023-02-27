@@ -17,3 +17,6 @@
 .vscode
 build
 .DS_Store
+
+.idea
+temp
