@@ -38,13 +38,11 @@ func GithubAuthentication(scopes []string, next func(token *oauth2.Token, client
 	if err := tokenResponse.Err; err != nil {
 		log.Fatal(err)
 	}
-	token := tokenResponse.Token
-
 	log.Printf("Successfully authenticated")
-	log.Printf("Got the access token: %v", token.AccessToken)
 
 	// Create a new GitHub client using the access token http.Client.
 	client := githubapi.NewClient(oauthClient.GetClient(context.Background(), token))
+	token := tokenResponse.Token
 
 	next(token, client)
 }
